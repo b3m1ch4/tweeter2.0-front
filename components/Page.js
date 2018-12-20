@@ -4,18 +4,18 @@ import Header from './Header';
 import Meta from './Meta';
 
 const theme = {
-  red: '#FF0000',
-  black: '#393939',
-  grey: '#3A3A3A',
-  lightgrey: '#E1E1E1',
-  offWhite: '#EDEDED',
+  blue: '#00ACED',
+  offWhite: '#F1EDDC',
+  marmalade: '#ECB083',
+  brightOrange: '#E25548',
+  berry: '#C73662',
   maxWidth: '1000px',
   bs: '0 12px 24px 0 rgba(0, 0, 0, 0.09)',
 };
 
 const StyledPage = styled.div`
-  background: white;
-  color: ${props => props.theme.black};
+  background: theme.offWhite;
+  color: ${props => props.theme.blue};
 `;
 
 const Inner = styled.div`
@@ -47,7 +47,7 @@ injectGlobal`
   }
   a {
     text-decoration: none;
-    color: ${theme.black};
+    color: ${theme.blue};
   }
 `;
 
